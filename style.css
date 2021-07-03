@@ -1,0 +1,75 @@
+.lotus {
+    width: 400px;
+    height: 400px;
+    border: 1px solid;
+    position: relative;
+}
+
+.lotus > div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 0  70% 50% 70%;
+    left: 70px;
+    top: 100px;
+    transform: rotate(45deg);
+    transform-origin: 150px 150px;
+    animation-duration: 6000ms;
+    animation-fill-mode: forwards;
+}
+.lotus > div:nth-child(1) {
+    background-color: brown;
+    animation-name: bloom-1;
+}
+.lotus > div:nth-child(2) {
+    background-color:pink;
+    animation-name: bloom-2;
+}
+.lotus > div:nth-child(3) {
+    background-color: burlywood
+}
+.lotus > div:nth-child(4) {
+    background-color:coral;
+    animation-name: bloom-4;
+}
+.lotus > div:nth-child(5) {
+    background-color:cadetblue;
+    animation-name: bloom-5;
+}
+
+@keyframes bloom-1 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-45deg); 
+    }
+}
+
+@keyframes bloom-2 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-0); 
+    }
+}
+
+@keyframes bloom-4 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-90deg); 
+    }
+}
+
+@keyframes bloom-5 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(135deg); 
+    }
+} 
